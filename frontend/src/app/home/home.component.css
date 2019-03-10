@@ -1,0 +1,17 @@
+
+  .sidebg{
+    background-color: whitesmoke;
+    min-height: 600px
+  }
+
+  
+
+  .icon{
+    position: fixed;
+    text-decoration: none;
+    margin-left: 93%;
+  }
+  a{
+    text-decoration: none;
+    color: white
+  }

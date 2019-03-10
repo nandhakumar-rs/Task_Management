@@ -1,0 +1,29 @@
+<div class="center">
+  <form #taskForm="ngForm" (ngSubmit)="addTask(taskForm)">
+    <mat-form-field class="input">
+      <input matInput placeholder="Task Title" type="text" name="taskName" [ngModel]="taskName" required>
+    </mat-form-field>
+    <mat-form-field class="input">
+      <textarea matInput placeholder="Task Desciption" name="taskDescription" [ngModel]="taskDescription" required></textarea>
+    </mat-form-field>
+    <!-- <mat-form-field class="input2">
+      <input matInput [matDatepicker]="start" name="startDate" [ngModel]="startDate" placeholder="Start Date" required>
+      <mat-datepicker-toggle matSuffix [for]="start"></mat-datepicker-toggle>
+      <mat-datepicker #start></mat-datepicker>
+    </mat-form-field> -->
+    <mat-form-field class="input2">
+      <input matInput [matDatepicker]="end" name="endDate" [ngModel]="endDate" placeholder="End Date" required>
+      <mat-datepicker-toggle matSuffix [for]="end"></mat-datepicker-toggle>
+      <mat-datepicker #end></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="input2">
+      <mat-select placeholder="Status" name="status" [ngModel]="status" required>
+        <mat-option *ngFor="let option of options" [value]="option.id">{{option.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <br>
+    <button mat-button mat-raised-button color="primary" type="submit" *ngIf = "!update" [disabled]="!taskForm.valid">Add Task</button>
+    <button mat-button mat-raised-button color="primary" type="submit" *ngIf="update" [disabled]="!taskForm.valid">Update Task</button>
+  </form>
+</div>

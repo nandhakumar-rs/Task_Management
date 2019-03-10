@@ -1,0 +1,30 @@
+.card{
+    max-width:300px;
+    max-height:500px;
+
+
+    float: left;
+    margin: 15px;
+}
+
+.buttons{
+    text-align: center;
+    
+}
+
+.bttn{
+    color: white
+}
+
+.success{
+    color:#34a853
+}
+
+.not{
+    color: #fbbc05
+}
+
+.content{
+    margin-left:16px
+}
+

@@ -1,0 +1,31 @@
+.bg{
+    background-color: #673ab7;
+    display: block;
+    position: relative;
+}
+.card {
+    min-width: 150px;
+  max-width: 500px;
+  width:50%;
+  margin:auto;
+  top:100%;
+  transform: translateY(50%);
+}
+.h2{
+   align-content: center;
+   margin-left: 60px;
+   color: #673ab7;
+}
+
+.input{
+    width: 100%;
+}
+
+.button{
+    
+    text-align: center
+}
+
+.btw{
+    width: 40%
+}

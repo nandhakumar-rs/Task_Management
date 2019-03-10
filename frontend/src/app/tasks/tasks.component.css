@@ -1,0 +1,15 @@
+.card{
+    max-width:300px;
+    max-height:500px;
+    float: left;
+    margin: 15px;   
+}
+
+.main{
+    float: left;
+}
+
+.chart{
+    max-width: 800px;
+    max-height: 500px;
+}

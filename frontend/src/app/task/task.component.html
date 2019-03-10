@@ -1,0 +1,22 @@
+
+  <mat-card>
+  <mat-card-header>
+    <mat-card-title>{{task.taskName}}</mat-card-title>
+    <mat-card-subtitle>Start : {{task.startDate | date:"d-MM-yy"}} End: {{task.endDate | date:"d-MM-yy"}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="content">
+    <p>
+      {{task.taskDescription}}
+    </p>
+    <br>
+    <b *ngIf="task.status == 1"> Status :<span class="success">{{status}}</span></b>
+    <b *ngIf="task.status == 0"> Status :<span class="not">{{status}}</span></b>
+  </mat-card-content>
+  <mat-card-actions class="buttons">
+    <button mat-button mat-raised-button color="accent" class="bttn" [routerLink]="['/home/update-task',task._id]">Update</button>
+    <button mat-button mat-raised-button color="warn" class="bttn" (click)="deleteTask(task._id)">Delete</button>
+  </mat-card-actions>
+</mat-card>
+
+
+

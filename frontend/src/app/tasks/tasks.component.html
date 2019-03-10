@@ -1,0 +1,6 @@
+<div class="chart" *ngIf="taskChart">
+    <canvas id="chart">{{taskChart}}</canvas>
+</div>
+<div class="card-deck" *ngFor="let task of tasks" class="main">
+<app-task [task] = "task" class="card" (delete)=delete($event)></app-task>
+</div>
